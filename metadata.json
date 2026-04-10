@@ -1,0 +1,5 @@
+{
+  "name": "Liste de Courses Pro",
+  "description": "Une application de liste de courses intuitive avec fonction annuler, renommage et marquage des articles.",
+  "requestFramePermissions": []
+}

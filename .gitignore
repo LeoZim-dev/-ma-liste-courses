@@ -6,4 +6,13 @@ coverage/
 *.log
 .env*
 !.env.example
+
+# IDEs and editors
 .vs/
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

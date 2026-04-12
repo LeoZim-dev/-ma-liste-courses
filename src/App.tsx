@@ -81,9 +81,9 @@ function ListItem({
     >
       <div 
         onPointerDown={(e) => dragControls.start(e)}
-        className="flex-shrink-0 text-gray-300 hover:text-gray-500 transition-colors cursor-grab active:cursor-grabbing p-1 -ml-1"
+        className="flex-shrink-0 text-gray-300 hover:text-gray-500 transition-colors cursor-grab active:cursor-grabbing p-2 -ml-2 touch-none"
       >
-        <GripVertical size={20} />
+        <GripVertical size={24} />
       </div>
 
       <button 
@@ -262,20 +262,6 @@ export default function App() {
           </div>
           <h1 className="text-xl font-bold tracking-tight">Ma Liste</h1>
         </div>
-        
-        <button 
-          onClick={undo}
-          disabled={history.length === 0}
-          className={cn(
-            "p-2.5 rounded-full transition-all duration-200",
-            history.length > 0 
-              ? "bg-gray-100 text-gray-700 hover:bg-gray-200 active:scale-90" 
-              : "text-gray-300 cursor-not-allowed"
-          )}
-          aria-label="Annuler"
-        >
-          <Undo2 size={20} />
-        </button>
       </header>
 
       <main className="max-w-2xl mx-auto p-6 space-y-8">

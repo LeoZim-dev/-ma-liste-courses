@@ -7,7 +7,7 @@ import { VitePWA } from 'vite-plugin-pwa';
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
   return {
-    base: '/-ma-liste-courses/', // Ajoutez cette ligne pour GitHub Pages
+    base: '/-ma-liste-courses/', // Correction : ajout du tiret pour correspondre au dépôt GitHub
     plugins: [
       react(),
       tailwindcss(),
